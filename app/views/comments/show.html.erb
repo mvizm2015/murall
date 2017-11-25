@@ -12,8 +12,8 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= @comment.picture %>
+  <%= @comment.picture.title %>
 </p>
 
 <%= link_to 'Edit', edit_comment_path(@comment) %> |
-<%= link_to 'Back', comments_path %>
+<%= link_to 'Back', pictures_path %>
