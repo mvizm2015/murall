@@ -16,11 +16,12 @@
 <%= render 'comments/form', comment: @comment %>
 
 <h3>Comments</h3>
+
 <% @picture.comments.each do |comment| %>
   <p>
     <%= comment.review %>
     <br>
-    Added on: <%= time_ago_in_words comment.created_at %> ago
+    Added: <%= time_ago_in_words comment.created_at %> ago
   </p>
 <% end %>
 
