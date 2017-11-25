@@ -1,8 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @picture.title %>
+  <strong>MURALL</strong>
 </p>
 
 <p>
@@ -13,14 +12,18 @@
   <%= image_tag @picture.url %>
 </p>
 
+<h3>Add Comment</h3>
+<%= render 'comments/form', comment: @comment %>
+
 <h3>Comments</h3>
 <% @picture.comments.each do |comment| %>
   <p>
     <%= comment.review %>
     <br>
-    Added on: <%= comment.created_at %>
+    Added on: <%= time_ago_in_words comment.created_at %> ago
   </p>
 <% end %>
+
 
 <%= link_to 'Edit', edit_picture_path(@picture) %> |
 <%= link_to 'Back', pictures_path %>
