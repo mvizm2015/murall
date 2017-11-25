@@ -13,5 +13,14 @@
   <%= image_tag @picture.url %>
 </p>
 
+<h3>Comments</h3>
+<% @picture.comments.each do |comment| %>
+  <p>
+    <%= comment.review %>
+    <br>
+    Added on: <%= comment.created_at %>
+  </p>
+<% end %>
+
 <%= link_to 'Edit', edit_picture_path(@picture) %> |
 <%= link_to 'Back', pictures_path %>
