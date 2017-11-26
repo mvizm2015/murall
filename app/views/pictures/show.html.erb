@@ -1,3 +1,20 @@
+<div class="show_main">
+<div class="image">
+  <img class="pic5" src="<%= @picture.url %>" alt="dinosaur" />
+</div>
+
+<div class="three">
+  <%= link_to 'Show', @picture %>
+  <%= link_to 'Edit', edit_picture_path(@picture) %>
+  <%= link_to 'Delete', @picture, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
+
+<div class="artist">
+  <a href="https://www.instagram.com/alexis_diaz/?hl=en">@Alexis Diaz</a>
+</div>
+</div>
+<!-- -------------------------------- -->
+
 <p id="notice"><%= notice %></p>
 
 <p>
