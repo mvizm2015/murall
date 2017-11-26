@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<div class="entire", id="border">
 <div class="header">
     <div class="nav">
       <div class="text">
@@ -8,28 +8,29 @@
     </div>
 </div>
 
-<table class='table table table-hover table table-bordered'>
+<!-- <table class='table table table-hover table table-bordered'>
   <thead>
     <tr>
-      <!-- <th>Title</th> -->
+      <th>Title</th>
       <th colspan="3"></th>
     </tr>
-  </thead>
+  </thead> -->
 
-  <tbody>
+  <div>
     <% @pictures.each do |picture| %>
-      <tr>
+      <div>
         <!-- <td><%= picture.title %></td> -->
 
-        <td><%= link_to( image_tag(picture.url), picture_path(picture) ) %></td>
+        <div class="image-front"><%= link_to( image_tag(picture.url), picture_path(picture) ) %></div>
 
         <!-- <td><%= link_to 'Show', picture %></td> -->
         <!-- <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
         <td><%= link_to 'Delete', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
-      </tr>
+      </div>
     <% end %>
-  </tbody>
-</table>
+  </div>
+
 
 <br>
 <%= link_to 'New Picture', new_picture_path %>
+</div>

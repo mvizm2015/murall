@@ -14,13 +14,29 @@
  *= require_self
  */
 
+ .entire {
+   width: 100%;
+   padding: 12px;
+   margin: 0px;
+ }
+
+ .entire#border {
+   border: 12px solid black ;
+ }
+
+ .entire#border:hover {
+   border-color: pink;
+ }
+
+
+
  .header {
    background-image: url("brick.jpg");
    background-size: cover;
  }
 
  .text {
-  text-align: center;
+   text-align: center;
  }
 
  .logo {
@@ -39,17 +55,17 @@
  }
 
  .left {
-  width: 50%;
+   width: 50%;
  }
 
  .right {
-  width: 50%;
-  padding-top: 8px;
+   width: 50%;
+   padding-top: 8px;
 
  }
 
  .row1 {
- display: flex;
+   display: flex;
  }
 
 
@@ -74,7 +90,7 @@
    width: 100vw;
  }
 
-  .image {
+ .image {
    padding-top: 50px;
    margin: 0 auto;
    width: 500px;
@@ -94,12 +110,12 @@
    text-align: center;
  }
 
-   a {
-     color: #FFFFFF;
-     text-decoration: none;
-   }
+ a {
+   color: #FFFFFF;
+   text-decoration: none;
+ }
 
-   a:hover {
+ a:hover {
    color: #FF69B4;
    background-color: transparent;
  }
