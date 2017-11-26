@@ -1,17 +1,24 @@
 body {
-  background-color: #fff;
+  background-color: #141518;
   color: #333;
   margin: 33px;
 }
 
+::selection {
+    background: #1bb76e;
+}
+
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-family: 'Open sans', sans-serif;
+  color: #f2f2f2
+  height: 100%;
+    margin: 0;
+  font-size: 14px;
   line-height: 18px;
 }
 
 pre {
-  background-color: #eee;
+  background-color: #141518;
   padding: 10px;
   font-size: 11px;
 }
