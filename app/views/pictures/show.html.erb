@@ -1,53 +1,48 @@
-<div class="show_main">
-<div class="image">
-  <img class="pic5" src="<%= @picture.url %>" alt="dinosaur" />
-</div>
-
-<div class="three">
-  <%= link_to 'Show', @picture %>
-  <%= link_to 'Edit', edit_picture_path(@picture) %>
-  <%= link_to 'Delete', @picture, method: :delete, data: { confirm: 'Are you sure?' } %>
-</div>
-
-<div class="artist">
-  <a href="https://www.instagram.com/alexis_diaz/?hl=en">@Alexis Diaz</a>
-</div>
-</div>
-<!-- -------------------------------- -->
-
 <p id="notice"><%= notice %></p>
 
 <p>
   <strong>MURALL</strong>
 </p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @picture.title %>
-</p>
-<p>
-  <%= image_tag @picture.url %>
-</p>
+
+<body class="show_main">
+  <div class="image">
+      <%= image_tag @picture.url %>
+    </div>
+    <div class="artist">
+      <a href="https://www.instagram.com/alexis_diaz/?hl=en" target='_blank'>@Alexis Diaz</a>
+    </div>
+  </div>
 
 
-<%= link_to 'Edit', edit_picture_path(@picture) %>
-<%= link_to 'Delete', @picture, method: :delete, data: { confirm: 'Are you sure?' } %>
 
-
-<h3>Add Comment</h3>
-<%= render 'comments/form', comment: @comment %>
-
-<h3>Comments </h3>
-
-<% @picture.comments.each do |comment| %>
   <p>
-    <strong><%= comment.name %>:</strong>
-    <%= comment.review %>
-    <br>
-    Added: <%= time_ago_in_words comment.created_at %> ago
+    <strong>Title:</strong>
+    <%= @picture.title %>
   </p>
-<% end %>
 
 
-<%= link_to 'Edit Picture', edit_picture_path(@picture) %> |
-<%= link_to 'Back', pictures_path %>
+
+
+  <%= link_to 'Edit', edit_picture_path(@picture) %>
+  <%= link_to 'Delete', @picture, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+
+  <h3>Add Comment</h3>
+  <%= render 'comments/form', comment: @comment %>
+
+  <h3>Comments </h3>
+
+  <% @picture.comments.each do |comment| %>
+    <p>
+      <strong><%= comment.name %>:</strong>
+      <%= comment.review %>
+      <br>
+      Added: <%= time_ago_in_words comment.created_at %> ago
+    </p>
+  <% end %>
+
+
+  <%= link_to 'Edit Picture', edit_picture_path(@picture) %> |
+  <%= link_to 'Back', pictures_path %>
+</body>
