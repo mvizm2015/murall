@@ -12,6 +12,11 @@
   <%= image_tag @picture.url %>
 </p>
 
+
+<%= link_to 'Edit', edit_picture_path(@picture) %>
+<%= link_to 'Delete', @picture, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+
 <h3>Add Comment</h3>
 <%= render 'comments/form', comment: @comment %>
 
