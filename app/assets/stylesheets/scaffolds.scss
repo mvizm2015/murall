@@ -1,6 +1,6 @@
 body {
   background-color: #141518;
-  color: #333;
+  color: #F2F2F2;
   margin: 33px;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
@@ -11,8 +11,50 @@ body {
   background: #1bb76e;
 }
 
+#topbar {
+  width: 100%:auto;
+  background-color: #34373c;
+  font-size: 15px;
+  height: 50px;
+  z-index: 101;
+  position: relative;
+  top: 0;
+}
+
+a.topbar-icon, #topbar, span.topbar-icon {
+  cursor: pointer;
+  color: #f2f2f2;
+  text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+
+#topbar .logo {
+  display: block;
+  float: left;
+  padding: 1px 11px 1px 13px;
+  margin-top: 7px;
+  border-radius: 20px;
+  margin-left: -10px;
+}
+
+#topbar .logo-icon {
+  float: left;
+  background url center center no-repeat;
+  width: 83px;
+  height: 34px;
+  background-size: contain;
+}
+
+.header-center {
+  width: 1048px;
+  margin:auto;
+  position: relative;
+}
+
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
