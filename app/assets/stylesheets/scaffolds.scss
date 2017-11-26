@@ -1,10 +1,14 @@
 body {
-  background-color: #fff;
+  background-color: #141518;
   color: #333;
   margin: 33px;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
   line-height: 18px;
+}
+
+::selection {
+  background: #1bb76e;
 }
 
 p, ol, ul, td {
@@ -14,7 +18,7 @@ p, ol, ul, td {
 }
 
 pre {
-  background-color: #eee;
+  background-color: #141518;
   padding: 10px;
   font-size: 11px;
 }
