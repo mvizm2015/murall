@@ -6,6 +6,7 @@
 
 
 <body class="show_main">
+
   <div class="image">
       <%= image_tag @picture.url %>
     </div>
@@ -14,35 +15,32 @@
     </div>
   </div>
 
+  <div class="pic-info">
 
+    <h3>
+      <!-- <strong>Title:</strong> -->
+      <em><%= @picture.title %></em>
+    </h3>
 
-  <p>
-    <strong>Title:</strong>
-    <%= @picture.title %>
-  </p>
+    <%= link_to 'Edit', edit_picture_path(@picture) %> |
+    <%= link_to 'Delete', @picture, method: :delete, data: { confirm: 'Are you sure?' } %>
 
+    <h4>Add Comment</h4>
+    <%= render 'comments/form', comment: @comment %>
 
+    <h4>Comments</h4>
 
+    <% @picture.comments.each do |comment| %>
+      <p>
+        <strong><%= comment.name %></strong>
+        <%= comment.review %>
+        <br>
+        Added <%= time_ago_in_words comment.created_at %> ago
+      </p>
+    <% end %>
 
-  <%= link_to 'Edit', edit_picture_path(@picture) %>
-  <%= link_to 'Delete', @picture, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <%= link_to 'Edit Picture', edit_picture_path(@picture) %> |
+    <%= link_to 'Back', pictures_path %>
+  </div>
 
-
-  <h3>Add Comment</h3>
-  <%= render 'comments/form', comment: @comment %>
-
-  <h3>Comments </h3>
-
-  <% @picture.comments.each do |comment| %>
-    <p>
-      <strong><%= comment.name %>:</strong>
-      <%= comment.review %>
-      <br>
-      Added: <%= time_ago_in_words comment.created_at %> ago
-    </p>
-  <% end %>
-
-
-  <%= link_to 'Edit Picture', edit_picture_path(@picture) %> |
-  <%= link_to 'Back', pictures_path %>
 </body>
