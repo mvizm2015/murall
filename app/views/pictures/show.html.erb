@@ -24,21 +24,26 @@
 
     <%= link_to 'Edit', edit_picture_path(@picture) %> |
     <%= link_to 'Delete', @picture, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <br>
+    <br>
+    <div class="comment-border">
 
-    <h4>Add Comment</h4>
-    <%= render 'comments/form', comment: @comment %>
+      <h4>Add Comment</h4>
+      <%= render 'comments/form', comment: @comment %>
 
-    <h4>Comments</h4>
+      <h4>Comments</h4>
 
-    <% @picture.comments.each do |comment| %>
-      <p>
-        <strong><%= comment.name %></strong>
-        <%= comment.review %>
-        <br>
-        Added <%= time_ago_in_words comment.created_at %> ago
-      </p>
-    <% end %>
+      <% @picture.comments.each do |comment| %>
+        <p>
+          <strong><%= comment.name %></strong>
+          <%= comment.review %>
+          <br>
+          Added <%= time_ago_in_words comment.created_at %> ago
+        </p>
+      <% end %>
 
+    </div>
+    <br>
     <%= link_to 'Edit Picture', edit_picture_path(@picture) %> |
     <%= link_to 'Back', pictures_path %>
   </div>
