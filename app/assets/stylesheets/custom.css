@@ -112,6 +112,13 @@ a {
 .artist a:hover {
   color: #FF69B4;
   background-color: transparent;
+  text-decoration: none;
+}
+
+.upload a:hover {
+  color: #FF69B4;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 .pic-info {
