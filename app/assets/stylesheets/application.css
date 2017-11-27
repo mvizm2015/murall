@@ -14,25 +14,25 @@
  *= require_self
  */
 
+.back-ground {
+  background-color: black
+}
+ .image-view {
+  max-width:100%;
+  border: 7px solid white ;
+  margin-bottom: 7px;
+ }
+
  .entire {
    width: 100%;
    padding: 12px;
    margin: 0px;
  }
 
- .entire#border {
-   border: 12px solid black ;
- }
-
- .entire#border:hover {
-   border-color: pink;
- }
-
-
-
  .header {
    background-image: url("brick.jpg");
    background-size: cover;
+   margin-bottom: 10px;
  }
 
  .text {
@@ -43,11 +43,7 @@
    margin-top: -50px;
  }
 
- .main {
-   background-color: #e7e7e8;
-   display: flex;
-   height: 100vh;
- }
+
 
  .pic5{
    width: 99%;
@@ -118,4 +114,14 @@
  a:hover {
    color: #FF69B4;
    background-color: transparent;
+ }
+
+ .upload {
+   text-align: center;
+   font-family: 'forum', cursive;
+   font-size: 50px;
+ }
+
+ .upload i {
+   font-size: 30px;
  }
