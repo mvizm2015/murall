@@ -2,12 +2,36 @@
 
 
 /*murall main css*/
-
-.header {
-  background-image: url("brick.jpg");
-  background-size: cover;
-  /*height: 200px;*/
+.back-ground {
+  background-color: black
 }
+ .image-view {
+  max-width:100%;
+  border: 7px solid white ;
+  margin-bottom: 7px;
+ }
+
+ .entire {
+   width: 100%;
+   padding: 12px;
+   margin: 0px;
+ }
+
+ .header {
+   background-image: url("brick.jpg");
+   background-size: cover;
+   margin-bottom: 10px;
+ }
+
+ .upload {
+   text-align: center;
+   font-family: 'forum', cursive;
+   font-size: 50px;
+ }
+
+ .upload i {
+   font-size: 30px;
+ }
 
 .text {
  text-align: center;
