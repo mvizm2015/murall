@@ -104,6 +104,9 @@ a {
   font-size: 30px;
 }
 
+.pic-info p {
+  font-family: 'Forum', cursive;
+}
 
 .pic-info a {
   font-size: 14px;
