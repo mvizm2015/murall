@@ -6,7 +6,7 @@
   background-color: black
 }
  .image-view {
-  max-width:100%;
+  width:100%;
   border: 7px solid white ;
   margin-bottom: 7px;
  }
