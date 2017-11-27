@@ -3,11 +3,11 @@
 
 /*murall main css*/
 .back-ground {
-  background-color: black
+  background-color: white
 }
  .image-view {
   width:100%;
-  border: 7px solid white ;
+  border: 7px solid black ;
   margin-bottom: 7px;
  }
 
