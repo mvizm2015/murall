@@ -147,3 +147,7 @@ a {
 .pic-info a {
   font-size: 14px;
 }
+
+textarea, input {
+  color: black;
+}
