@@ -2,19 +2,35 @@
 
 
 /*murall main css*/
+
+.outer-div {
+  display: flex;
+  /*justify-content: space-around;*/
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.left-div {
+  flex-direction: row;
+  width: 100%;
+}
+
+
 .back-ground {
   background-image: url("https://www.xmple.com/wallpaper/gradient-white-grey-linear-1920x1080-c2-ffffff-d3d3d3-a-240-f-14.svg");
   background-repeat: no-repeat;
 }
  .image-view {
-  width:50%;
-  border: 7px solid black ;
+  width:33.3%;
+  border: 2px solid black ;
   margin-bottom: 7px;
+  float: left;
+  padding: 1px;
  }
 
  .entire {
    width: 100%;
-   padding: 12px;
+   padding: 0px;
    margin: 0px;
  }
 
@@ -27,7 +43,7 @@
  .upload {
    text-align: center;
    font-family: 'forum', cursive;
-   font-size: 50px;
+   font-size: 70px;
  }
 
 .text {
