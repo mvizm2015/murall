@@ -3,7 +3,8 @@
 
 /*murall main css*/
 .back-ground {
-  background-color: white
+  background-image: url("https://www.xmple.com/wallpaper/gradient-white-grey-linear-1920x1080-c2-ffffff-d3d3d3-a-240-f-14.svg");
+  background-repeat: no-repeat;
 }
  .image-view {
   width:50%;
