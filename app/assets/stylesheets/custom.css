@@ -1,0 +1,125 @@
+/*reset*/
+
+
+/*murall main css*/
+
+.header {
+  background-image: url("brick.jpg");
+  background-size: cover;
+  /*height: 200px;*/
+}
+
+.text {
+ text-align: center;
+}
+
+.main {
+  background-color: #e7e7e8;
+  display: flex;
+  height: 100vh;
+}
+
+.pic5{
+  width: 99%;
+  padding-top: 8px;
+}
+
+.left {
+ width: 50%;
+}
+
+.right {
+ width: 50%;
+ padding-top: 8px;
+
+}
+
+.row1 {
+display: flex;
+}
+
+
+.row2 {
+  display: flex;
+}
+
+.pic {
+  width: 50%;
+}
+
+.pic>img{
+  width: 98%;
+}
+
+/*murall2 css*/
+
+.show_main {
+  background-color: black;
+  /*height: 100vh;*/
+  /*width: 100vw;*/
+}
+
+.show_image {
+  width: 100%;
+}
+
+.image img {
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+.artist {
+  color: #FFFFFF;
+  font-family: 'Poiret One', cursive;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Grand Hotel', cursive;
+  text-decoration: none;
+  font-size: 70px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.artist a:hover {
+  color: #FF69B4;
+  background-color: transparent;
+}
+
+.pic-info {
+  color: #C4CAD0;
+  font-family: 'Forum', cursive;
+  font-size: 18px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.comment-border {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  width: 300px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.pic-info h3 {
+  font-family: 'Forum', cursive;
+  font-size: 30px;
+}
+
+.pic-info p {
+  font-family: 'Forum', cursive;
+  color: #A4969B;
+}
+
+.pic-info p strong {
+  font-size: 20px;
+}
+
+.pic-info a {
+  font-size: 14px;
+}

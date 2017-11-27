@@ -1,53 +1,51 @@
-<div class="show_main">
-<div class="image">
-  <img class="pic5" src="<%= @picture.url %>" alt="dinosaur" />
-</div>
-
-<div class="three">
-  <%= link_to 'Show', @picture %>
-  <%= link_to 'Edit', edit_picture_path(@picture) %>
-  <%= link_to 'Delete', @picture, method: :delete, data: { confirm: 'Are you sure?' } %>
-</div>
-
-<div class="artist">
-  <a href="https://www.instagram.com/alexis_diaz/?hl=en">@Alexis Diaz</a>
-</div>
-</div>
-<!-- -------------------------------- -->
-
 <p id="notice"><%= notice %></p>
 
 <p>
   <strong>MURALL</strong>
 </p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @picture.title %>
-</p>
-<p>
-  <%= image_tag @picture.url %>
-</p>
 
+<body class="show_main">
 
-<%= link_to 'Edit', edit_picture_path(@picture) %>
-<%= link_to 'Delete', @picture, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <div class="image">
+      <%= image_tag @picture.url %>
+    </div>
+    <div class="artist">
+      <a href="https://www.instagram.com/alexis_diaz/?hl=en" target='_blank'>@Alexis Diaz</a>
+    </div>
+  </div>
 
+  <div class="pic-info">
 
-<h3>Add Comment</h3>
-<%= render 'comments/form', comment: @comment %>
+    <h3>
+      <!-- <strong>Title:</strong> -->
+      <em><%= @picture.title %></em>
+    </h3>
 
-<h3>Comments </h3>
-
-<% @picture.comments.each do |comment| %>
-  <p>
-    <strong><%= comment.name %>:</strong>
-    <%= comment.review %>
+    <%= link_to 'Edit', edit_picture_path(@picture) %> |
+    <%= link_to 'Delete', @picture, method: :delete, data: { confirm: 'Are you sure?' } %>
     <br>
-    Added: <%= time_ago_in_words comment.created_at %> ago
-  </p>
-<% end %>
+    <br>
+    <div class="comment-border">
 
+      <h4>Add Comment</h4>
+      <%= render 'comments/form', comment: @comment %>
 
-<%= link_to 'Edit Picture', edit_picture_path(@picture) %> |
-<%= link_to 'Back', pictures_path %>
+      <h4>Comments</h4>
+
+      <% @picture.comments.each do |comment| %>
+        <p>
+          <strong><%= comment.name %></strong>
+          <%= comment.review %>
+          <br>
+          Added <%= time_ago_in_words comment.created_at %> ago
+        </p>
+      <% end %>
+
+    </div>
+    <br>
+    <%= link_to 'Edit Picture', edit_picture_path(@picture) %> |
+    <%= link_to 'Back', pictures_path %>
+  </div>
+
+</body>
