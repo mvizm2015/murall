@@ -1,9 +1,24 @@
-<h1>Login</h1>
+<body class="back-ground">
+  <div class="entire">
+    <div class="header">
+      <div class="nav">
+        <div class="text">
+          <%= image_tag ( "logo.png") %>
+        </div>
+      </div>
+    </div>
 
-<%= form_tag '/login' do %>
+    <div class="user-border">
 
-  Email: <%= text_field_tag :email %>
-  Password: <%= password_field_tag :password %>
-  <%= submit_tag "Submit" %>
+      <h1>Login</h1>
 
-<% end %>
+      <%= form_tag '/login' do %>
+
+      Email: <%= text_field_tag :email %>
+      Password: <%= password_field_tag :password %><br>
+      <center>
+      <%= submit_tag "Submit" %>
+    </center>
+      <% end %>
+    </div>
+  </body>
