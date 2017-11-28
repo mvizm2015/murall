@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<div id="notice"><%= notice %></div>
 <body class="back-ground">
   <div class="entire">
     <div class="header">
@@ -8,7 +8,25 @@
         </div>
       </div>
     </div>
+    <% unless current_user %>
+    <div class="user-border">
 
+      <h1 class="center">Login</h1>
+
+      <%= form_tag '/login' do %>
+      <div class="form-group">
+        <%= text_field_tag :email, '', placeholder: "Email" %>
+      </div>
+      <div class="form-group">
+        <%= password_field_tag :password, '', placeholder: "Password" %>
+      </div>
+
+      <center class="submit">
+      <%= submit_tag "Submit" %>
+    </center>
+      <% end %>
+    </div>
+    <% else %>
     <div class="outer-div ">
       <div class="left-div grid">
         <% @pictures.each do |picture| %>
@@ -29,6 +47,6 @@
 
       <% end %>
     </div>
-
+<% end %>
   </div>
 </body>

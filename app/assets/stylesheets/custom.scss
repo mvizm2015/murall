@@ -151,12 +151,30 @@ a:hover {
 .user-border {
   border: 3px solid rgba(255, 255, 255, 0.3);
   border-radius: 10px;
-  width: inherit: 500px;
+  width: 500px;
   margin: 0 auto;
   padding-top: 10px;
 
 }
 
+.center {
+  text-align: center;
+}
+
+.login-user, .logged-user {
+    position: absolute;
+    padding-left: 20px;
+}
+.form-group{
+  text-align: center;
+}
+.form-group input {
+    border-radius: 3px;
+    border: none;
+    width: 375px;
+    text-align: center;
+    height: 30px;
+}
 center.submit {
   padding: 10px;
 }
