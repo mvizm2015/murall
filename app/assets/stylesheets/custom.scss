@@ -35,7 +35,15 @@
    background-size: cover;
    margin-bottom: 10px;
  }
-
+ .upload {
+     position: fixed;
+     right: 25px;
+     bottom: 15px;
+     background: white;
+     width: 80px;
+     border-radius: 20%;
+     height: 80px;
+ }
  .upload {
    text-align: center;
    font-family: 'forum', cursive;
