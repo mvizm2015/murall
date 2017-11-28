@@ -1,0 +1,25 @@
+<body class="back-ground">
+  <div class="entire">
+    <div class="header">
+      <div class="nav">
+        <div class="text">
+          <%= image_tag ( "logo.png") %>
+        </div>
+      </div>
+    </div>
+
+    <h1>Signup!</h1>
+
+    <div class="user-border">
+
+      <%= form_for :user, url: '/users' do |f| %>
+
+      Name: <%= f.text_field :name %>
+      Email: <%= f.text_field :email %>
+      Password: <%= f.password_field :password %>
+      Password Confirmation: <%= f.password_field :password_confirmation %><center class="submit">
+      <%= f.submit "Submit" %></center>
+
+      <% end %>
+    </div>
+</body>
