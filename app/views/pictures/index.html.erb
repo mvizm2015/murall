@@ -12,7 +12,11 @@
     <div class="outer-div ">
       <div class="left-div grid">
         <% @pictures.each do |picture| %>
-          <%= link_to( image_tag(picture.url, class: "image-view"), picture_path(picture), class: 'grid-item' ) %>
+          <div class='grid-item' onclick='window.location.href = "<%= picture_path(picture) %>"'>
+
+            <%= image_tag(picture.url, class: "image-view") %>
+            <div class="title"><%= picture.title %></div>
+          </div>
         <% end %>
       </div>
     </div>

@@ -61,6 +61,30 @@
   /*width: 100vw;*/
 }
 
+.grid-item {
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: tomato;
+    opacity: 0;
+    cursor: e-resize;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+
+}
+
 .image img {
   width: 800px;
   height: auto;
@@ -74,13 +98,13 @@
   font-family: 'Dancing Script', cursive;
   font-family: 'Grand Hotel', cursive;
   text-decoration: none;
-  font-size: 70px;
   padding-top: 50px;
   text-align: center;
 }
 
 a {
-  color: white;
+  color: black;
+  font-size: 16px;
   text-decoration: none;
 }
 
@@ -90,6 +114,12 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: #FF69B4;
+}
+
+.artist a {
+  color: white;
+  font-size: 70px;
 }
 
 .artist a:hover {
@@ -98,7 +128,12 @@ a:hover {
   text-decoration: none;
 }
 
-.upload a:hover {
+.upload i {
+  color: #4D5359;
+  font-size: 80px;
+}
+
+.upload i:hover {
   color: #FF69B4;
   background-color: transparent;
   text-decoration: none;
@@ -114,7 +149,7 @@ a:hover {
 }
 
 .comment-border {
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 15px;
   width: 300px;
   width: 300px;
@@ -136,7 +171,12 @@ a:hover {
 }
 
 .pic-info a {
+  color: white;
   font-size: 14px;
+}
+
+.pic-info a:hover {
+  color: #4D5359;
 }
 
 textarea, input {
@@ -147,4 +187,38 @@ textarea, input {
   float: left;
   width: 33.3%;
   min-width: 250px;
+}
+
+.edit-info {
+  font-family: 'Forum', cursive;
+  color: black;
+  font-size: 18px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.edit-info h1 {
+  color: #FF69B4;
+}
+
+.edit-info a {
+  color: #4D5359;
+}
+
+.edit-info a:hover {
+  color: #FF69B4;
+}
+
+.new-info {
+  font-family: 'Forum', cursive;
+  color: black;
+  font-size: 18px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.new-info h1 {
+  color: #FF69B4;
 }

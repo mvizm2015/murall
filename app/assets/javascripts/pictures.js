@@ -1,8 +1,6 @@
 $(function(){
-  setTimeout(function(){
-    $('.grid').packery({
-      percentPosition: true
-    })
-  },500)
+  $('.grid').packery({
+    percentPosition: true
+  })
 
 })
