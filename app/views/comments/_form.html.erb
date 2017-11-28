@@ -12,13 +12,17 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :comment_name %>
+    <!-- <%= form.label :name %> -->
+    <div class="comment-group">
+      <%= form.text_field :name, id: :comment_name, placeholder: "Name" %>
+    </div>
   </div>
 
   <div class="field">
-    <%= form.label :review %>
-    <%= form.text_area :review, id: :comment_review %>
+    <!-- <%= form.label :review %> -->
+    <div class="comment-group">
+      <%= form.text_area :review, id: :comment_review, placeholder: "Add Comment" %>
+    </div>
   </div>
 
   <div class="field">
