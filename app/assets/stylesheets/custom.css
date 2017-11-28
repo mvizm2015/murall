@@ -5,7 +5,6 @@
 
 .outer-div {
   display: flex;
-  /*justify-content: space-around;*/
   width: 100%;
   flex-wrap: wrap;
 }
@@ -15,22 +14,19 @@
   width: 100%;
 }
 
-
 .back-ground {
   background-image: url("https://www.xmple.com/wallpaper/gradient-white-grey-linear-1920x1080-c2-ffffff-d3d3d3-a-240-f-14.svg");
   background-repeat: no-repeat;
 }
  .image-view {
-  width:33.3%;
+  max-width: 100%;
   border: 2px solid black ;
-  margin-bottom: 7px;
   float: left;
-  padding: 1px;
+  width: 100%;
  }
 
  .entire {
    width: 100%;
-   /*padding: 12px;*/
    margin: 0px;
  }
 
@@ -56,37 +52,6 @@
   height: 100vh;
 }
 
-/*.pic5{
-  width: 99%;
-  padding-top: 8px;
-}
-
-.left {
- width: 50%;
-}
-
-.right {
- width: 50%;
- padding-top: 8px;
-
-}
-
-.row1 {
-display: flex;
-}
-
-
-.row2 {
-  display: flex;
-}
-
-.pic {
-  width: 50%;
-}
-
-.pic>img{
-  width: 98%;
-}*/
 
 /*murall2 css*/
 
@@ -97,7 +62,8 @@ display: flex;
 }
 
 .image img {
-  width: 100%;
+  width: 800px;
+  height: auto;
   display: block;
   margin: 0 auto;
 }
@@ -143,6 +109,7 @@ a:hover {
   font-family: 'Forum', cursive;
   font-size: 18px;
   padding-top: 60px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -174,4 +141,10 @@ a:hover {
 
 textarea, input {
   color: black;
+}
+
+.grid-item {
+  float: left;
+  width: 33.3%;
+  min-width: 250px;
 }
