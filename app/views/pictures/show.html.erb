@@ -15,16 +15,16 @@
   <div class="image">
       <%= image_tag @picture.url %>
     </div>
-    <div class="artist">
+    <!-- <div class="artist">
       <a href="https://www.instagram.com/alexis_diaz/?hl=en" target='_blank'>@Alexis Diaz</a>
     </div>
-  </div>
+  </div> -->
 
   <div class="pic-info">
 
-    <h3>
+    <h3 class="title">
       <!-- <strong>Title:</strong> -->
-      <em><%= @picture.title %></em>
+      <%= @picture.title %>
     </h3>
 
     <%= link_to 'Edit', edit_picture_path(@picture) %> |
@@ -35,11 +35,11 @@
 
       <%= render 'comments/form', comment: @comment %>
 
-      <h4 class="extra-padding">Comments</h4>
+      <h4 class="commtitle">Comments</h4>
 
       <% @picture.comments.each do |comment| %>
         <p>
-          <strong><%= comment.name %></strong>
+          <u><strong>@<%= comment.name %></strong></u> :
           <%= comment.review %>
           <br>
           <div class="time-font">Added <%= time_ago_in_words comment.created_at %> ago</div>

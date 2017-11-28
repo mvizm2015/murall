@@ -83,9 +83,7 @@
     justify-content: center;
     align-items: center;
     background: #FCC8C2;
-    font-family: 'Poiret One', cursive;
     font-family: 'Dancing Script', cursive;
-    font-family: 'Grand Hotel', cursive;
     font-size: 40px;
     opacity: 0;
     cursor: e-resize;
@@ -104,15 +102,15 @@
   margin: 0 auto;
 }
 
-.artist {
-  color: #FFFFFF;
-  font-family: 'Poiret One', cursive;
-  font-family: 'Dancing Script', cursive;
-  font-family: 'Grand Hotel', cursive;
-  text-decoration: none;
-  padding-top: 50px;
-  text-align: center;
-}
+// .artist {
+//   color: #FFFFFF;
+//   font-family: 'Poiret One', cursive;
+//   font-family: 'Dancing Script', cursive;
+//   font-family: 'Grand Hotel', cursive;
+//   text-decoration: none;
+//   padding-top: 50px;
+//   text-align: center;
+// }
 
 a {
   color: black;
@@ -156,7 +154,7 @@ a:hover {
   color: #C4CAD0;
   font-family: 'Forum', cursive;
   font-size: 18px;
-  padding-top: 60px;
+  padding-top: 30px;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -167,7 +165,6 @@ a:hover {
   width: 500px;
   margin: 0 auto;
   padding-top: 10px;
-
 }
 
 .center {
@@ -196,12 +193,29 @@ center.submit {
   padding: 10px;
 }
 
+.pic-info .title {
+  font-size: 80px;
+  font-family: 'Poiret One', cursive;
+  // font-family: 'Dancing Script', cursive;
+  color: #A4969B;
+  padding-bottom: 20px;
+}
+
+.commtitle {
+  font-size: 40px;
+  // font-family: 'Poiret One', cursive;
+  font-family: 'Dancing Script', cursive;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .comment-border {
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 15px;
   width: 500px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .comment-group input[type=text] {
@@ -210,6 +224,7 @@ center.submit {
   width: 150px;
   height: 30px;
 }
+
 
 .time-font {
   font-size: 12px;
