@@ -128,6 +128,7 @@ a:hover {
 .artist a {
   color: white;
   font-size: 70px;
+  text-decoration: none;
 }
 
 .artist a:hover {
@@ -171,7 +172,11 @@ a:hover {
 
 .login-user, .logged-user {
     position: absolute;
-    padding-left: 20px;
+    right: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    font-family: 'Forum', cursive;
+    font-weight: bolder;
 }
 .form-group{
   text-align: center;
