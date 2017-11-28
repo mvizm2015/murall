@@ -118,7 +118,12 @@ a:hover {
   border-radius: 10px;
   width: inherit: 500px;
   margin: 0 auto;
+  padding-top: 10px;
 
+}
+
+center.submit {
+  padding: 10px;
 }
 
 .comment-border {
