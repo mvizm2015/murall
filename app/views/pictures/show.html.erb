@@ -32,17 +32,16 @@
     <br>
     <div class="comment-border">
 
-      <h4>Add Comment</h4>
       <%= render 'comments/form', comment: @comment %>
 
-      <h4>Comments</h4>
+      <h4 class="extra-padding">Comments</h4>
 
       <% @picture.comments.each do |comment| %>
         <p>
           <strong><%= comment.name %></strong>
           <%= comment.review %>
           <br>
-          Added <%= time_ago_in_words comment.created_at %> ago
+          <div class="time-font">Added <%= time_ago_in_words comment.created_at %> ago</div>
         </p>
       <% end %>
 
