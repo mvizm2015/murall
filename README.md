@@ -22,7 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-Shaila Kavrakova
-Maria Vizcaino
-Shunit Roth
-Maryam Ghobadi
+`Shaila Kavrakova`
+`Maria Vizcaino`
+`Shunit Roth`
+`Maryam Ghobadi`
