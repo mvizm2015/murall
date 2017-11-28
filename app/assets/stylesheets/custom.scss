@@ -174,11 +174,27 @@ a:hover {
   text-align: center;
 }
 
+.home-menu {
+  padding-right: 20px;
+  font-size: 18px;
+  font-family: 'Forum', cursive;
+  font-weight: bolder;
+  color: #A4969B;
+}
+
+.show-menu a {
+  padding-right: 20px;
+  font-size: 18px;
+  font-family: 'Forum', cursive;
+  font-weight: bolder;
+  color: #FF69B4;
+}
+
 .login-user, .logged-user {
     position: absolute;
     right: 20px;
     padding-right: 20px;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Forum', cursive;
     font-weight: bolder;
 }
@@ -240,7 +256,7 @@ center.submit {
 
 .pic-info a {
   color: white;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .pic-info a:hover {
