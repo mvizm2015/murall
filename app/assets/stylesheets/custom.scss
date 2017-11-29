@@ -25,15 +25,17 @@
   width: 100%;
  }
 
- .entire {
-   width: 100%;
-   margin: 0px;
- }
+ // .entire {
+ //   width: 100%;
+ //   margin: 0px;
+ // }
 
- .header {
-   background-image: url("/images/brick.jpg");
-   background-size: cover;
-   margin-bottom: 10px;
+ header {
+   position: fixed;
+
+   // background-image: url("/images/brick.jpg");
+   // background-size: cover;
+   // margin-bottom: 10px;
  }
  .upload {
      position: fixed;
@@ -124,7 +126,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #FF69B4;
+  color: white;
 }
 
 // .artist a {
@@ -145,7 +147,7 @@ a:hover {
 }
 
 .upload i:hover {
-  color: #FF69B4;
+  color: #FCC8C2;
   background-color: transparent;
   text-decoration: none;
 }
@@ -157,6 +159,40 @@ a:hover {
   padding-top: 30px;
   padding-bottom: 20px;
   text-align: center;
+}
+
+.login-user, .logged-user {
+    position: absolute;
+    right: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    font-family: 'Forum', cursive;
+    font-weight: bolder;
+}
+
+nav.home-menu{
+  position: fixed;
+  height: 36px;
+  display: block;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  background-color: #A4969B;
+
+}
+
+.left-nav {
+  padding-left: 20px;
+  font-size: 18px;
+  font-family: 'Forum', cursive;
+  font-weight: bolder;
+}
+
+.right-nav {
+  padding-right: 20px;
+  font-size: 18px;
+  font-family: 'Forum', cursive;
+  font-weight: bolder;
 }
 
 .user-border {
