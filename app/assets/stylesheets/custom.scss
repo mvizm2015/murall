@@ -179,6 +179,7 @@ a:hover {
   color: #A4969B;
 }
 
+
 .login-user, .logged-user {
     position: absolute;
     right: 20px;
@@ -186,7 +187,13 @@ a:hover {
     font-size: 18px;
     font-family: 'Forum', cursive;
     font-weight: bolder;
+    color: white;
 }
+
+.logged-user i {
+  font-size: 14px;
+}
+
 .form-group{
   text-align: center;
 }
