@@ -35,7 +35,7 @@
 
 /* line 34, /Users/shailaaa93/Desktop/wyncode/trio_project/murall/app/assets/stylesheets/custom.scss */
 .header {
-  background-image: url("brick.jpg");
+  background-image: url("/assets/brick.jpg");
   background-size: cover;
   margin-bottom: 10px;
 }
