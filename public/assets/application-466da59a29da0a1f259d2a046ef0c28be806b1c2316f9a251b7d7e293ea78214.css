@@ -1,0 +1,436 @@
+/*reset*/
+/*murall main css*/
+/* line 7, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.outer-div {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* line 13, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.left-div {
+  flex-direction: row;
+  width: 100%;
+}
+
+/* line 18, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.back-ground {
+  background-image: url("https://www.xmple.com/wallpaper/gradient-white-grey-linear-1920x1080-c2-ffffff-d3d3d3-a-240-f-14.svg");
+  background-repeat: no-repeat;
+}
+
+/* line 22, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.image-view {
+  max-width: 100%;
+  border: 2px solid black;
+  float: left;
+  width: 100%;
+}
+
+/* line 29, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.entire {
+  width: 100%;
+  margin: 0px;
+}
+
+/* line 34, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.header {
+  background-image: url("/images/brick.jpg");
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+/* line 39, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.upload {
+  position: fixed;
+  right: 25px;
+  bottom: 15px;
+  background: white;
+  width: 80px;
+  border-radius: 20%;
+  height: 80px;
+}
+
+/* line 48, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.upload {
+  text-align: center;
+  font-family: 'forum', cursive;
+  font-size: 70px;
+}
+
+/* line 54, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.text {
+  text-align: center;
+}
+
+/* line 58, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.main {
+  background-color: #e7e7e8;
+  display: flex;
+  height: 100vh;
+}
+
+/*murall2 css*/
+/* line 67, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.show_main {
+  background-color: black;
+  /*height: 100vh;*/
+  /*width: 100vw;*/
+}
+
+/* line 74, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.grid-item .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FCC8C2;
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  opacity: 0;
+  cursor: e-resize;
+}
+/* line 91, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.grid-item .title:hover {
+  opacity: 0.6;
+}
+
+/* line 99, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.image img {
+  width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 116, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+a {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* line 122, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.pic-info a:vistied {
+  color: white;
+}
+
+/* line 126, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+a:hover {
+  text-decoration: none;
+  color: #FF69B4;
+}
+
+/* line 143, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.upload i {
+  color: #4D5359;
+  font-size: 80px;
+}
+
+/* line 148, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.upload i:hover {
+  color: #FF69B4;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* line 154, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.pic-info {
+  color: #C4CAD0;
+  font-family: 'Forum', cursive;
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* line 163, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.login-user, .logged-user {
+  position: absolute;
+  right: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+  font-family: 'Forum', cursive;
+  font-weight: bolder;
+}
+
+/* line 172, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.user-border {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+/* line 180, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.center {
+  text-align: center;
+}
+
+/* line 184, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.home-menu {
+  padding-right: 20px;
+  font-size: 18px;
+  font-family: 'Forum', cursive;
+  font-weight: bolder;
+  color: #A4969B;
+}
+
+/* line 192, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.form-group {
+  text-align: center;
+}
+
+/* line 195, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.form-group input {
+  border-radius: 3px;
+  border: none;
+  width: 375px;
+  text-align: center;
+  height: 30px;
+}
+
+/* line 202, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+center.submit {
+  padding: 10px;
+}
+
+/* line 206, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.pic-info .title {
+  font-size: 80px;
+  font-family: 'Poiret One', cursive;
+  color: #A4969B;
+  padding-bottom: 20px;
+}
+
+/* line 214, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.commtitle {
+  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 222, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.comment-border {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 231, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.comment-group input[type=text] {
+  border-radius: 3px;
+  border: none;
+  width: 150px;
+  height: 30px;
+}
+
+/* line 239, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.time-font {
+  font-size: 12px;
+}
+
+/* line 243, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+::-webkit-input-placeholder {
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* line 248, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.extra-padding {
+  padding-top: 20px;
+}
+
+/* line 252, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.pic-info h3 {
+  font-family: 'Forum', cursive;
+  font-size: 30px;
+}
+
+/* line 257, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.pic-info p {
+  font-family: 'Forum', cursive;
+  color: #A4969B;
+}
+
+/* line 262, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.pic-info p strong {
+  font-size: 20px;
+}
+
+/* line 266, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.pic-info a {
+  color: white;
+  font-size: 16px;
+}
+
+/* line 271, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.pic-info a:hover {
+  color: #4D5359;
+}
+
+/* line 275, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+textarea, input {
+  color: black;
+}
+
+/* line 279, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.grid-item {
+  float: left;
+  width: 33.3%;
+  min-width: 250px;
+}
+
+/* line 285, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.edit-info {
+  font-family: 'Forum', cursive;
+  color: black;
+  font-size: 18px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* line 294, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.edit-info h1 {
+  color: #FF69B4;
+}
+
+/* line 298, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.edit-info a {
+  color: #4D5359;
+}
+
+/* line 302, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.edit-info a:hover {
+  color: #FF69B4;
+}
+
+/* line 306, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.new-info {
+  font-family: 'Forum', cursive;
+  color: black;
+  font-size: 18px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* line 315, /Users/vizmhm/Documents/wyncode/week6/murall/app/assets/stylesheets/custom.scss */
+.new-info h1 {
+  color: #FF69B4;
+}
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+/*body {
+  background-color: #fff;
+  color: #333;
+  /*margin: 33px;*/
+
+}
+
+/*body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}*/
+
+/*a {
+  color: #000;
+}
+
+a:visited {
+  color: #666;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #000;
+}*/
+
+th {
+  padding-bottom: 5px;
+}
+
+td {
+  padding: 0 5px 7px;
+}
+
+div.field,
+div.actions {
+  margin-bottom: 10px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+label {
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

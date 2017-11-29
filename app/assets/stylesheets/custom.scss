@@ -159,16 +159,21 @@ a:hover {
   text-align: center;
 }
 
+.login-user, .logged-user {
+    position: absolute;
+    right: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    font-family: 'Forum', cursive;
+    font-weight: bolder;
+}
+
 .user-border {
   border: 3px solid rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   width: 500px;
   margin: 0 auto;
   padding-top: 10px;
-}
-
-.center {
-  text-align: center;
 }
 
 .home-menu {
@@ -179,14 +184,10 @@ a:hover {
   color: #A4969B;
 }
 
-.login-user, .logged-user {
-    position: absolute;
-    right: 20px;
-    padding-right: 20px;
-    font-size: 18px;
-    font-family: 'Forum', cursive;
-    font-weight: bolder;
+.center {
+  text-align: center;
 }
+
 .form-group{
   text-align: center;
 }
